@@ -1,0 +1,59 @@
+/* GLOBAL STYLES */
+
+/* NAVBAR */
+
+nav {
+  background: transparent;
+}
+
+/* CENTER ALL */
+
+.all-center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* SHOWCASE */
+
+.showcase {
+  margin: 10% 0;
+}
+
+#page-heading {
+  position: absolute;
+  left: 22%;
+  text-align: center;
+  width: 200px;
+}
+
+#page-heading h1 {
+  color: rgb(61 21 99);
+  font-size: 5rem;
+}
+
+#panda-logo {
+  position: absolute;
+  right: 13%;
+  margin-bottom: 10%;
+}
+
+/* UTILITIES */
+
+/* TEXT STYLES */
+
+/* PADDING */
+
+/* MARGIN */
+
+/* BADGES */
+
+/* ALERTS */
+
+/* BUTTONS */
+
+/* FORMS */
