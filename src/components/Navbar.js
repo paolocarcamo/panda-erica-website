@@ -1,46 +1,50 @@
-import React from "react"
+import React from "react";
+import Nav from "react-bootstrap/Nav";
+import PropTypes from "prop-types";
 
-function Navbar(){
-    return <div>
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-            <div class="d-flex flex-grow-1">
-                <span class="w-100 d-lg-none d-block"></span>
-                {/* hidden spacer to center brand on mobile */}
-                <a class="navbar-brand" href="#">
-                    Logo
-                </a>
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Art</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Design</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+const Navbar = ({ title }) => {
+  return (
+    <div className="navbar">
+      <h2 id="logo">
+        <strong>{title}</strong>
+      </h2>
+      <Nav
+        variant="pills"
+        className="justify-content-end"
+        defaultActiveKey="#home"
+      >
+        <Nav.Item>
+          <Nav.Link href="#home">HOME</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#about">ABOUT</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#art">ART</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#design">DESIGN</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#books">BOOKS</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#contact">CONTACT</Nav.Link>
+        </Nav.Item>
+      </Nav>
     </div>
-}
+  );
+};
+
+Navbar.defaultProps = {
+  title: "PandaErica",
+};
+
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Navbar;
+
+/* I will probably want to use props for the different pictures that Erica will want to use for her links. 
+Then, I will need to model it from the Navbar that I created with GitFinder.*/
