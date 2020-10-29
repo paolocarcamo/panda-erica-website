@@ -61,7 +61,7 @@
 
 #panda-logo {
   position: absolute;
-  top: 17%;
+  top: 16%;
   right: 13%;
 }
 
@@ -71,7 +71,7 @@
   background-color: rgb(61 21 99);
   text-align: center;
   color: white;
-  margin: 30% 0 0;
+  margin: 27% 0 0;
   height: 400px;
   width: 100%;
 }
@@ -82,15 +82,37 @@
 
 .caro-item {
   height: 400px;
-  padding: 5% 0 20%;
+  padding: 15% 20% 20%;
 }
 
 /* ART */
 
 .art {
   overflow: auto;
-  height: 560px;
-  padding: 5%;
+  height: 460px;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#nanay {
+  width: 300px;
+}
+
+#family {
+  width: 300px;
+}
+
+#mums {
+  width: 300px;
+}
+
+#peacock {
+  width: 300px;
+  align-self: flex-start;
+  align-items: flex-start;
 }
 
 /* FOOTER */

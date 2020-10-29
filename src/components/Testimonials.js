@@ -6,19 +6,23 @@ const Testimonials = () => {
     <div>
       <div id="testimonials">
         <Carousel>
-          <Carousel.Item className="caro-item">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Carousel.Item className="caro-item" id="test-one">
+            <h3>
+              "Erica is pure joy to work with! The combination of her creativity
+              and professionalism is unparalleled!"
+            </h3>
+            <p>- PAOLO CARCAMO | THE DAILY PLANET</p>
           </Carousel.Item>
-          <Carousel.Item className="caro-item">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Carousel.Item className="caro-item" id="test-two">
+            <h3>"Erica brings your imagination to reality!"</h3>
+            <p>- JONAH JAMESON | THE DAILY BUGLE</p>
           </Carousel.Item>
-          <Carousel.Item className="caro-item">
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+          <Carousel.Item className="caro-item" id="test-three">
+            <h3>
+              "Unmistakeably a top notch artist and even more of a top notch
+              human that illustrates your world!"
+            </h3>
+            <p>- LOIS LANE | THE DAILY PLANET</p>
           </Carousel.Item>
         </Carousel>
       </div>
