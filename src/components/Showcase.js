@@ -10,11 +10,11 @@ const Showcase = () => {
         <br />
         <div id="page-heading">
           <h1>Panda Erica</h1>
-          <p>A PANDA GIRL</p>
+          <p>A panda girl</p>
           <br />
-          <p>DRAWING & PAINTING</p>
+          <p>drawing & painting</p>
           <br />
-          <p>HER PANDA WORLD</p>
+          <p>her panda world</p>
           <br />
         </div>
       </div>

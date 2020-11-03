@@ -1,37 +1,52 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
 import PropTypes from "prop-types";
 
 const Navbar = ({ title }) => {
+  // const [homeActivation, setHomeActivation] = useState("nav-link active");
+  // const [artActivation, setArtActivation] = useState("nav-link");
+
+  // const clickHandler = () => {
+  //   setArtActivation("nav-link active");
+  //   setHomeActivation("nav-link");
+  // };
+
   return (
     <div className="navbar">
       <h2 id="logo">
         <strong>{title}</strong>
       </h2>
-      <Nav
-        variant="pills"
-        className="justify-content-end"
-        defaultActiveKey="#home"
-      >
-        <Nav.Item>
-          <Nav.Link href="#home">HOME</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#about">ABOUT</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#art">ART</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#design">DESIGN</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#books">BOOKS</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#contact">CONTACT</Nav.Link>
-        </Nav.Item>
-      </Nav>
+      <ul class="nav nav-pills">
+        <li class="nav-item home-pill">
+          <a class="nav-link" data-toggle="pill" href="/">
+            Home
+          </a>
+        </li>
+        <li class="nav-item about-pill">
+          <a class="nav-link" data-toggle="pill" href="/about">
+            About
+          </a>
+        </li>
+        <li class="nav-item art-pill">
+          <a class="nav-link" data-toggle="pill" href="/#art">
+            Art
+          </a>
+        </li>
+        <li class="nav-item design-pill">
+          <a class="nav-link" data-toggle="pill" href="/design">
+            Design
+          </a>
+        </li>
+        <li class="nav-item books-pill">
+          <a class="nav-link" data-toggle="pill" href="/books">
+            Books
+          </a>
+        </li>
+        <li class="nav-item contact-pill">
+          <a class="nav-link" data-toggle="pill" href="/contact">
+            Contact
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };

@@ -6,21 +6,57 @@
 
 .navbar {
   background-color: white;
-  padding: 5px 12px 5px 10px;
+  padding: 5px 12px 4px 12px;
+  font-family: "Lobster Two", cursive;
+  font-size: 1.3rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
-  box-shadow: 5px 0px 10px rgb(192, 192, 192);
 }
 
 .navbar h2 {
   padding-top: 5px;
+  font-family: "Lobster Two", cursive;
   color: rgb(61 21 99);
 }
 
-.navitem:global(.active) {
-  background-color: #777777;
+/* BOOTSTRAP LINK OVERRIDE | ACTIVE NAV LINK */
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: white;
+  background-color: rgb(61 21 99);
+}
+
+/*  ACTIVE NAV LINKS */
+
+.nav-pills .home-pill .nav-link:not(.active) {
+  color: rgb(61 21 99);
+}
+
+.nav-pills .home-pill .nav-link.active {
+  color: rgb(61 21 99);
+}
+
+.nav-pills .about-pill .nav-link:not(.active) {
+  color: rgb(61 21 99);
+}
+
+.nav-pills .art-pill .nav-link:not(.active) {
+  color: rgb(61 21 99);
+}
+
+.nav-pills .design-pill .nav-link:not(.active) {
+  color: rgb(61 21 99);
+}
+
+.nav-pills .books-pill .nav-link:not(.active) {
+  color: rgb(61 21 99);
+}
+
+.nav-pills .contact-pill .nav-link:not(.active) {
+  color: rgb(61 21 99);
 }
 
 /* CENTER ALL */
@@ -43,7 +79,7 @@
 
 #page-heading {
   position: absolute;
-  top: 28%;
+  top: 31%;
   left: 22%;
   text-align: center;
   width: 200px;
@@ -51,17 +87,20 @@
 
 #page-heading h1 {
   color: rgb(61 21 99);
+  font-family: "Lobster Two", cursive;
   font-size: 5rem;
 }
 
 #page-heading p {
   margin: 0;
   margin-bottom: -10%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
 }
 
 #panda-logo {
   position: absolute;
-  top: 16%;
+  top: 20%;
   right: 13%;
 }
 
@@ -69,9 +108,10 @@
 
 #testimonials {
   background-color: rgb(61 21 99);
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   color: white;
-  margin: 27% 0 0;
+  margin: 30% 0 0;
   height: 400px;
   width: 100%;
 }
@@ -91,11 +131,18 @@
   overflow: auto;
   height: 460px;
   margin: 5%;
+  margin-bottom: 2%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+/* .art img {
+  padding: 3px;
+} */
+
+/* I need to figure out the proper spacing for the art pieces with flexbox. */
 
 #nanay {
   width: 300px;
@@ -116,17 +163,130 @@
 }
 
 /* FOOTER */
+.copyright {
+  display: inline-block;
+  padding-left: 1%;
+}
+
+.socials {
+  float: right;
+  padding-right: 2%;
+}
 
 .footer {
-  background-color: rgb(61 21 99);
+  background-color: rgb(94, 33, 151);
   color: white;
-  position: fixed;
   bottom: 0;
   width: 100%;
   height: 40px;
-  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
   padding-top: 8px;
+  opacity: 0.8;
 }
+
+.footer h5 {
+  display: inline-block;
+  margin: 0;
+}
+
+.footer p {
+  display: inline-block;
+  margin: 0;
+}
+
+.tumblr-icon {
+  height: 22px;
+  padding: 0 5px;
+}
+
+.tumblr-icon:hover {
+  fill: rgb(190, 171, 255);
+}
+
+h5 a {
+  color: white;
+}
+
+h5 a:hover {
+  color: rgb(190, 171, 255);
+}
+
+/* ABOUT */
+
+.about {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 8% 0 6% 5%;
+}
+
+.panda-erica {
+  width: 50%;
+  float: left;
+  padding: 11% 3% 0 0;
+}
+
+.photo-heading {
+  position: absolute;
+  top: 28%;
+  margin: 0;
+  margin-left: 3%;
+}
+
+/* Biography */
+
+.biography {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+.about h4 {
+  font-family: "Lobster Two", cursive;
+  color: rgb(61 21 99);
+}
+
+.about p {
+  padding: 5px 6% 0 0;
+  margin: 0;
+}
+
+.about a {
+  color: rgb(61 21 99);
+}
+
+/* Resume */
+
+.resume {
+  width: 75%;
+}
+
+.gallery-shows {
+  width: 75%;
+}
+
+.about h1 {
+  font-family: "Lobster Two", cursive;
+  color: rgb(61 21 99);
+  margin: 0;
+}
+
+.about h3 {
+  margin: 0;
+}
+
+.about h6 {
+  text-decoration: underline;
+  margin: 0;
+}
+
+hr {
+  border: 10px dotted rgb(231, 225, 250);
+  border-top: none;
+  width: 10%;
+}
+
+/* .biography {
+  float: left;
+} */
 
 /* UTILITIES */
 

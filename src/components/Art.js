@@ -7,7 +7,7 @@ import Peacock from "../images/peacock.png";
 const Art = () => {
   return (
     <div>
-      <div className="art-container">
+      <div className="art-container" id="art">
         <div className="art">
           <img src={Nanay} alt="nanay" id="nanay" />
           <img src={Peacock} alt="peacock" id="peacock" />
