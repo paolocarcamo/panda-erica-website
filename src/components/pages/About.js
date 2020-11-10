@@ -50,6 +50,7 @@ const About = () => {
             projects, or just to say 'Hello'.
           </p>
         </div>
+        <hr />
         <br />
         {/* Resume */}
         <div className="resume">

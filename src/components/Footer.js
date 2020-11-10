@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       <div className="footer">
         <div className="copyright">
-          <p>© Erica De Chavez</p>
+          <p>PandaErica © Erica De Chavez</p>
         </div>
         <div className="socials">
           <h5>

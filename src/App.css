@@ -200,7 +200,8 @@
 }
 
 .tumblr-icon:hover {
-  fill: rgb(190, 171, 255);
+  fill: rgb(253, 255, 130);
+  /* fill: rgb(190, 171, 255); */
 }
 
 h5 a {
@@ -208,7 +209,7 @@ h5 a {
 }
 
 h5 a:hover {
-  color: rgb(190, 171, 255);
+  color: rgb(253, 255, 130);
 }
 
 /* ABOUT */
@@ -221,14 +222,20 @@ h5 a:hover {
 .panda-erica {
   width: 50%;
   float: left;
-  padding: 11% 3% 0 0;
+  padding: 3% 3% 0 0;
 }
+
+/* FIX TEXT TO JUSTIFY THE WIDTH OF PICTURE */
 
 .photo-heading {
   position: absolute;
-  top: 28%;
   margin: 0;
   margin-left: 3%;
+  text-align: justify;
+}
+
+.photo-heading h4 {
+  text-align: justify;
 }
 
 /* Biography */
@@ -256,11 +263,11 @@ h5 a:hover {
 /* Resume */
 
 .resume {
-  width: 75%;
+  width: 60%;
 }
 
 .gallery-shows {
-  width: 75%;
+  width: 60%;
 }
 
 .about h1 {
@@ -303,3 +310,7 @@ hr {
 /* BUTTONS */
 
 /* FORMS */
+
+/* Fix art pictures to scroll down in flex box fill/grow. */
+
+/* Art, Design, and Books - separate pages. On hover show piece details. On click, bring to rest of series in the piece. Plus a description of books.*/
